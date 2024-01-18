@@ -21,7 +21,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [](https://github.com/Rhandelz/Web-Age-Calculator-App/tree/main)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
