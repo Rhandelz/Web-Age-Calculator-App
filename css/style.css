@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lred: hsl(0, 100%, 67%);
+
+  --White: hsl(0, 0%, 100%);
+  --Off_white: hsl(0, 0%, 94%);
+  --Light_grey: hsl(0, 0%, 86%);
+  --Smokey_grey: hsl(0, 1%, 44%);
+  --Off_black: hsl(0, 0%, 8%);
+
+  --input_tsize: 32px;
+
+  --Mobile: 375px;
+  --Desktop: 1440px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Off_white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main_container {
+  width: 50%;
+  border-radius: 10px 10px 150px 10px;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.date_input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.date_input_container > span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 25%;
+  /*   min-width: 80px; */
+}
+
+.date_input_container > span > label {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2.5px;
+  color: var(--Smokey_grey);
+}
+
+.date_input_container > span > input {
+  font-size: var(--input_tsize);
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid var(--Light_grey);
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.date_input_container > span > input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.date_input_container > span > input:focus {
+  border: 1px solid var(--Smokey_grey);
+}
+
+.date_input_container > span > input::placeholder {
+  font-weight: 700;
+}
+
+.date_input_container > span > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+  color: red;
+  display: none;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.main_btn {
+  border-radius: 1000px;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  background-color: var(--purple);
+}
+
+.main_btn:hover {
+  background-color: black;
+}
+
+.date_display {
+  width: 100%;
+}
+
+.date_display > span {
+  display: flex;
+  font-size: 32px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.date_display > span > h1:nth-child(1) {
+  color: var(--purple);
+}
+
+.date_display > span > h1:nth-child(2) {
+  font-style: italic;
+}
+
+@media (max-width: 375px) {
+  .main_container {
+    width: 90%;
+    padding: 10px;
+  }
+  .date_display > span > h1:nth-child(1) {
+    font-size: 40px;
+  }
+
+  .date_display > span > h1:nth-child(2) {
+    font-size: 40px;
+  }
+
+  .date_input_container {
+    justify-content: center;
+    align-items: center;
+  }
+  .date_input_container > span {
+    min-width: 90px;
+  }
+
+  .date_input_container > span > input {
+    font-size: 20px;
+  }
+
+  .btn_container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_btn {
+    padding: 15px;
+  }
+
+  .main_btn > img {
+    height: 20px;
+  }
+}
